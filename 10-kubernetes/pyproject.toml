@@ -1,0 +1,16 @@
+[project]
+name = "10-kubernetes"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "grpcio>=1.76.0",
+    "keras-image-helper>=0.0.2",
+    "tensorflow-serving-api>=2.19.1",
+]
+
+[tool.uv.workspace]
+members = [
+    "workshop/service",
+]
